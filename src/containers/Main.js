@@ -1,12 +1,10 @@
 import React, {useEffect, useState} from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
-import Skills from "./skills/Skills";
 import WorkExperience from "./workExperience/WorkExperience";
 import Footer from "../components/footer/Footer";
 import Education from "./education/Education";
 import ScrollToTopButton from "./topbutton/Top";
-import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
 import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
@@ -44,10 +42,8 @@ const Main = () => {
           <>
             <Header />
             <Greeting />
-            <Skills />
             <Education />
             <WorkExperience />
-            <Profile />
             <Footer />
             <ScrollToTopButton />
           </>

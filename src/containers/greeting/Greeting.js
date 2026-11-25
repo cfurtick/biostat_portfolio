@@ -5,7 +5,7 @@ import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import Button from "../../components/button/Button";
+//import Button from "../../components/button/Button";
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
@@ -38,18 +38,6 @@ export default function Greeting() {
               </p>
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
-              <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
-                {greeting.resumeLink && (
-                  <a
-                    href={require("./resume.pdf")}
-                    download="Resume.pdf"
-                    className="download-link-button"
-                  >
-                    <Button text="Download my resume" />
-                  </a>
-                )}
-              </div>
             </div>
           </div>
           <div className="greeting-image-div">
@@ -57,9 +45,9 @@ export default function Greeting() {
               <DisplayLottie animationData={landingPerson} />
             ) : (
               <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
-              ></img>
+                alt="Photo of me"
+                //src={require("../../assets/images/my-photo.JPG")}
+              />
             )}
           </div>
         </div>

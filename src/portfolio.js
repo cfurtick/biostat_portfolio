@@ -16,7 +16,7 @@ const splashScreen = {
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: false // Set to false to use static SVG
 };
 
 const greeting = {
@@ -26,7 +26,7 @@ const greeting = {
     "I am a current Biostatistics masters student at the University of Washington."
   ),
   resumeLink:
-    "", // Set to empty to hide the button
+    "My Resume", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -35,7 +35,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/cfurtick",
   linkedin: "https://www.linkedin.com/in/clairefurtick/",
-  gmail: "clairefurtick@gmail.com",
+  gmail: "cfurtick@uw.edu",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -58,12 +58,20 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
+      schoolName: "University of Washington",
+      logo: require("./assets/images/uwLogo.png"),
+      subHeader: "Master of Science in Biostatistics",
+      duration: "September 2026 - Present",
+      desc: "Biostatistics Excellence Award",
+      //descBullets: ["Note, Notes"]
+    },
+    {
       schoolName: "George Washington University",
-      logo: require("./assets/images/stanfordLogo.png"),
+      logo: require("./assets/images/gwLogo.jpg"),
       subHeader: "Bachelor of Science in Computer Science, Minor in Mathematics",
       duration: "September 2018 - April 2022",
       desc: "Magna Cum Laude, Honors Program, Presidential Merit Scholarship",
-      descBullets: ["Note, Notes"]
+      //descBullets: ["Note, Notes"]
     }
   ]
 };
@@ -76,34 +84,29 @@ const workExperiences = {
     {
       role: "Junior Research Engineer",
       company: "Barcelona Supercomputing Center",
-      companylogo: require("./assets/images/facebookLogo.png"),
+      companylogo: require("./assets/images/bscLogo.jpg"),
       date: "April 2023 – April 2024",
-      desc: "Add description...",
+      desc: "Description...",
     },
     {
       role: "Project Coordinator",
       company: "North East Medical Services",
-      companylogo: require("./assets/images/quoraLogo.png"),
+      companylogo: require("./assets/images/nemsLogo.jpg"),
       date: "April 2025 – April 2026",
-      desc: "Add description here..."
+      desc: "Description..."
     },
     {
       role: "Undergraduate Research Assistant",
       company: "George Washinton Unviersity",
-      companylogo: require("./assets/images/airbnbLogo.png"),
+      companylogo: require("./assets/images/gwLogo.jpg"),
       date: "Jan 2020 – Jan 2021",
-      desc: "Description here..."
+      desc: "Description..."
     }
   ]
 };
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
-
-const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
-};
 
 
 export {
